@@ -22,7 +22,9 @@ The following statements can be useful while you are working on a project:
 On Windows:
 
 * `del /s /q .gitkeep`: It removes all the .gitignore files within the project; `/s disables` disables the command-line prompting and `/q` deletes the file from all subfolders.
+* `mklink \H link-file source-file`: Creates a hard link of the source-file.
 
 On Linux:
 
 * `find . -name "*.gitkeep" -type f -delete`: It removes all the .gitignore files within the project.
+* `ln source-file link-file`: Creates a hard link of the source-file.
