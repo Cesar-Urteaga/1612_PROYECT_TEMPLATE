@@ -31,3 +31,7 @@ On Linux:
 * `find . -name "*.gitkeep" -type f -delete`: It removes all the .gitignore files within the project.
 * `ln source-file link-file`: Creates a hard link of the source-file.
 * `cat filename`: Shows the contents of the filename.
+
+### Git
+
+* Whether you want to add a command-line shortcut to a common git command use `git config --global alias.<shortcut> 'commands (do not include the word git)'`. So you can call it with `git <shortcut`.
