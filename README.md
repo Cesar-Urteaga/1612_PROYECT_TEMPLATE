@@ -22,15 +22,19 @@ The following statements can be useful while you are working on a project:
 On Windows:
 
 * `del /s /q .gitkeep`: It removes all the .gitignore files within the project; `/s disables` disables the command-line prompting and `/q` deletes the file from all subfolders.
-* `mklink \H link-file source-file`: Creates a hard link of the source-file.
-* `grep -v '^#' filename > newfilename`: Removes all the lines that start with the character `#`.  The `-v` tag shows all the lines that does not start with the specified regular expression. Note that you cannot overwrite the file because `grep` does not allow it, however, you can use `sed -i '/^#/ d' filename`.
-* `cat filename`: Shows the contents of the filename.
+* `mklink \H <link-file> <source-file>`: Creates a hard link of the source-file.
+* `grep -v '^#' <filename> > <newfilename>`: Removes all the lines that start with the character `#`.  The `-v` tag shows all the lines that does not start with the specified regular expression. Note that you cannot overwrite the file because `grep` does not allow it, however, you can use `sed -i '/^#/ d' <filename>`.
+* `cat <filename>`: Shows the contents of the filename.
+* `start .`: Opens the current directory.
+* `clip < <file>`: Copy the contents of `file` to the clipboard.
+* `tree /A /F | more`: Shows the file tree structure of the working directory by parts (i.e., asks input from user to continue).
+* `head <regular expression> -n 2`: Displays the first 2 lines of the files with filenames that follows the given `regular expression`.
 
 On Linux:
 
 * `find . -name "*.gitkeep" -type f -delete`: It removes all the .gitignore files within the project.
-* `ln source-file link-file`: Creates a hard link of the source-file.
-* `cat filename`: Shows the contents of the filename.
+* `ln <source-file> <link-file>`: Creates a hard link of the source-file.
+* `cat <filename>`: Shows the contents of the filename.
 
 ### Git
 
