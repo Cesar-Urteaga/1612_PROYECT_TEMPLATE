@@ -35,7 +35,7 @@ On Linux:
 * `find . -name "*.gitkeep" -type f -delete`: It removes all the .gitignore files within the project.
 * `ln <source-file> <link-file>`: Creates a hard link of the source-file.
 * `cat <filename>`: Shows the contents of the filename.
-* `pdftk <pdf-file> output <password-protected-pdf-file> userpw <password>`: Adds a password to the `pdf-file`.  You must have had install `pdftk` (`sudo apt-get install pdftk`).  N.B.: `pdf-file` should be different to `password-protected-pdf-file`.
+* `pdftk <pdf-file> output <password-protected-pdf-file> userpw <password>`: Adds a password to the `pdf-file`.  You must have had to install `pdftk` (`sudo apt-get install pdftk`).  N.B.: `pdf-file` should be different to `password-protected-pdf-file`.
 
 ### Git
 
