@@ -22,6 +22,7 @@ The following statements can be useful while you are working on a project:
 On Windows:
 
 * `del /s /q .gitkeep`: It removes all the .gitignore files within the project; `/s disables` disables the command-line prompting and `/q` deletes the file from all subfolders.
+* `copy *.csv consolidated_CSVs.csv`: Merge all the `CSV` files in the current directory into the `consolidated_CSVs.csv` file.  It is a way to promptly merge files!
 * `mklink \H <link-file> <source-file>`: Creates a hard link of the source-file.
 * `grep -v '^#' <filename> > <newfilename>`: Removes all the lines that start with the character `#`.  The `-v` tag shows all the lines that does not start with the specified regular expression. Note that you cannot overwrite the file because `grep` does not allow it, however, you can use `sed -i '/^#/ d' <filename>`.
 * `cat <filename>`: Shows the contents of the filename.
