@@ -6,7 +6,7 @@ Description of the project...
 
 The project has the following structure (some could not apply for a particular task):
 
-  * **_CODES**: Contains all the programming codes used in the project.
+  * **_CODE**: Contains all the programming codes used in the project.
   * **_DATA**:  Has the data used throughout the development of the project.
   * **_GRAPHS**: Comprehends all the charts elaborated in the undertaking.
   * **_RESOURCES**: Include some relevant files that were used during the construction of the project.
