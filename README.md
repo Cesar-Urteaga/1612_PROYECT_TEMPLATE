@@ -44,12 +44,15 @@ On Linux:
 
 * In order to pull all the new files under tracking out you can use `git ls-files --others --exclude-standard`.
 * You can use `git reset --hard HEAD` so as to go back to the last commit, while you can use `git checkout HEAD -- <file>` in order to go back to the previous state of file.
-* With the aim to show the differences by word, you can use `git diff --color-words`.
 * You may get all the files under tracking with `git ls-tree -r master --name-only`.
+* You can get the branch hierarchy with `git log --all --graph --decorate --oneline --simplify-by-decoration`.
+* With the aim to show the differences by word, you can use `git diff --color-words`.
 * In case you have amended in your local repository, and you want to push to a remote one, you can force the push using `git push -f origin master`.
 * Whether you want to add a command-line shortcut to a common git command, you can use `git config --global alias.<shortcut> "commands (do not include the word git)"`; It adds a new entry in the `~/.gitconfig file` (you can know where it is located with `git config --list --show-origin`).  Thereon, you can call it with `git <shortcut>`.  You may want to consider the following shortcuts:
     - `git config --global alias.lf "ls-files --others --exclude-standard"`
     - `git config --global alias.lt "ls-tree -r master --name-only"`
+    - `git config --global alias.lb "log --all --graph --decorate --oneline --simplify-by-decoration"`
     - `git config --global alias.wdiff "diff --color-words"`
     - `git config --global alias.pf "push -f origin master"`
+
 
